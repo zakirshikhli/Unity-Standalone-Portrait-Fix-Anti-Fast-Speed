@@ -11,3 +11,6 @@ Tips:
 2) **If max resolution is wrong**, use PlayerPrefs.DeleteAll() once.
 
 If any other questions about this code ask to zakirshikhli@gmail.com
+
+Recomendded Player Settings:
+https://github.com/zakirshikhli/Unity-Standalone-Portrait-Fix-Anti-Fast-Speed/blob/master/Untitled.png
