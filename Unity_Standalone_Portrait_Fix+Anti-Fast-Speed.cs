@@ -8,23 +8,21 @@
 /// ____Free for use and share____
 /// 
 /// </summary>
-/// 
 
 
 void Awake()
 {
 #if UNITY_EDITOR || UNITY_STANDALONE
 
-        Screen.SetResolution
-         (       
+        //Correct Portrait resolution for Standalone Build
+        Screen.SetResolution(       
          Screen.resolutions[Screen.resolutions.Length - 1].height*9/16,
          Screen.resolutions[Screen.resolutions.Length - 1].height - Screen.resolutions[Screen.resolutions.Length - 1].height/10,
-         false
-         );
-
+         false);
+        
+        // Anti Fast Speed
         Resolution res = Screen.currentResolution;
         if (res.refreshRate == 60)  QualitySettings.vSyncCount = 1;
-        if (res.refreshRate == 120) QualitySettings.vSyncCount = 2;
-      
+        if (res.refreshRate == 120) QualitySettings.vSyncCount = 2;      
 #endif
 }
